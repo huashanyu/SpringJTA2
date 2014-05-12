@@ -22,8 +22,8 @@
 				<prop key="databaseName">companyA</prop>
 				<prop key="serverName">localhost</prop>
 				<prop key="port">3306</prop>
-				<prop key="user">root</prop>
-				<prop key="password">vfr800</prop>
+				<prop key="user">user</prop>
+				<prop key="password">user</prop>
 				<prop key="url">jdbc:mysql://localhost:3306/companyA</prop>
 			</props>
 		</property>
@@ -45,8 +45,8 @@
 				<prop key="databaseName">companyB</prop>
 				<prop key="serverName">localhost</prop>
 				<prop key="port">3306</prop>
-				<prop key="user">root</prop>
-				<prop key="password">vfr800</prop>
+				<prop key="user">user</prop>
+				<prop key="password">user</prop>
 				<prop key="url">jdbc:mysql://localhost:3306/companyB</prop>
 			</props>
 		</property>
