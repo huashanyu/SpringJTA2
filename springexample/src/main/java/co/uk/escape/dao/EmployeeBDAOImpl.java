@@ -11,7 +11,7 @@ import co.uk.escape.model.EmployeeB;
 @Service
 public class EmployeeBDAOImpl implements EmployeeBDAO {
 
-	@PersistenceContext(unitName="PersistenceUnitB")
+//	@PersistenceContext(unitName="PersistenceUnitB")
 	private EntityManager entityManager;
 
 	public void persistEmployee(EmployeeB employee) throws Exception {

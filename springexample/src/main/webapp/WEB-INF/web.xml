@@ -23,7 +23,18 @@
 
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>/appServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<display-name>findServlet</display-name>
+		<servlet-name>findServlet</servlet-name>
+		<servlet-class>org.springframework.web.context.support.HttpRequestHandlerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>findServlet</servlet-name>
+		<url-pattern>/findServlet</url-pattern>
 	</servlet-mapping>
 
 	<resource-ref>

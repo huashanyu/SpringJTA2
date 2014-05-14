@@ -6,5 +6,6 @@ import co.uk.escape.model.EmployeeB;
 public interface EmployeeService {
 
 	void persistEmployees(EmployeeA employeeA, EmployeeB employeeB) throws Exception;
+	EmployeeA findEmployees(EmployeeA employeeA) throws Exception;
 	
 }

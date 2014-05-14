@@ -17,8 +17,8 @@ import co.uk.escape.model.EmployeeA;
 import co.uk.escape.model.EmployeeB;
 import co.uk.escape.service.EmployeeService;
 
-@Component("appServlet")
-public class AppServlet 
+@Component("findServlet")
+public class findServlet 
 implements HttpRequestHandler {
 
 	@Autowired
@@ -26,19 +26,15 @@ implements HttpRequestHandler {
 	
 	public void handleRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		EmployeeA em1 = new EmployeeA();
-		em1.setId("1234");
-		em1.setName("John");
-		em1.setAge(300);
-		EmployeeB em2 = new EmployeeB();
-		em2.setId("1234");
-		em2.setName("Mary");
-		em2.setAge(200);
+		em1.setId("123");
 
+		
 		try {
-			employeeService.persistEmployees(em1, em2);
-			 resp.setContentType("text/html");
+				em1 = employeeService.findEmployees(em1);
+				resp.setContentType("text/html");
 		        PrintWriter out = resp.getWriter();
-		        out.println("<h2>Both employees are inserted!</h2>");
+		        out.println("<h2>EmployeeA</h2>");
+		        out.println(em1);
 		} catch (Exception e) {
 			 resp.setContentType("text/html");
 		        PrintWriter out = resp.getWriter();
